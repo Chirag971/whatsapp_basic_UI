@@ -19,9 +19,15 @@ class _designeState extends State<designe> {
             bottom: TabBar(
               tabs: [
                 Icon(Icons.group),
-                Text('chats'),
-                Text('Status'),
-                Text('Calls'),
+
+                Tab( child: Text('chats'),
+                ),
+
+                Tab( child: Text('Status'),
+                ),
+
+                Tab( child: Text('Calls'),
+                ),
               ],
             ),
             actions: [
@@ -70,7 +76,7 @@ class _designeState extends State<designe> {
                     trailing: Text('4:00 PM'),
                   );
                 }),
-            Text('Chats'),
+
             Text('Status'),
             Text('Calls')
           ]),
